@@ -81,6 +81,7 @@ body::before {
     radial-gradient(circle, rgba(247, 240, 232, 0.22) 0 1px, transparent 1.2px);
   background-position: 8% 12%, 74% 18%, 38% 76%, 88% 68%;
   background-size: 190px 240px, 270px 330px, 230px 290px, 310px 360px;
+  animation: starfield-twinkle 7.5s ease-in-out infinite alternate;
 }
 
 body.lightbox-open {
@@ -268,6 +269,33 @@ p {
     radial-gradient(circle, rgba(247, 240, 232, 0.24) 0 1px, transparent 1.4px);
   background-position: 16% 22%, 74% 37%, 42% 68%, 86% 74%;
   background-size: 160px 190px, 230px 280px, 290px 340px, 340px 390px;
+  animation: hero-stars-twinkle 5.8s ease-in-out infinite alternate;
+}
+
+@keyframes starfield-twinkle {
+  0% {
+    opacity: 0.3;
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.48;
+  }
+  100% {
+    opacity: 0.38;
+    transform: translate3d(0, -6px, 0);
+  }
+}
+
+@keyframes hero-stars-twinkle {
+  0% {
+    opacity: 0.28;
+  }
+  45% {
+    opacity: 0.52;
+  }
+  100% {
+    opacity: 0.39;
+  }
 }
 
 .hero-content {
@@ -607,8 +635,8 @@ p {
 /* Music */
 .music-toggle {
   position: fixed;
-  right: 18px;
-  bottom: calc(18px + env(safe-area-inset-bottom));
+  top: calc(18px + env(safe-area-inset-top));
+  left: 18px;
   z-index: 50;
   width: 58px;
   height: 58px;
@@ -911,8 +939,11 @@ p {
   }
 
   .hero-bg,
-  .instagram-image {
+  .instagram-image,
+  body::before,
+  .hero-particles {
     transform: none !important;
+    animation: none !important;
   }
 }
 
