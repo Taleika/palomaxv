@@ -73,13 +73,14 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.34;
+  opacity: 0.42;
   background-image:
     radial-gradient(circle, rgba(247, 240, 232, 0.42) 0 1px, transparent 1.4px),
     radial-gradient(circle, rgba(235, 200, 221, 0.28) 0 1px, transparent 1.3px),
-    radial-gradient(circle, rgba(201, 198, 216, 0.24) 0 1px, transparent 1.2px);
-  background-position: 8% 12%, 74% 18%, 38% 76%;
-  background-size: 190px 240px, 270px 330px, 230px 290px;
+    radial-gradient(circle, rgba(201, 198, 216, 0.24) 0 1px, transparent 1.2px),
+    radial-gradient(circle, rgba(247, 240, 232, 0.22) 0 1px, transparent 1.2px);
+  background-position: 8% 12%, 74% 18%, 38% 76%, 88% 68%;
+  background-size: 190px 240px, 270px 330px, 230px 290px, 310px 360px;
 }
 
 body.lightbox-open {
@@ -255,32 +256,18 @@ p {
   will-change: transform;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  width: clamp(76px, 22vw, 154px);
-  aspect-ratio: 1;
-  top: 12%;
-  right: clamp(20px, 8vw, 132px);
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 38% 36%, #fffaf0 0 10%, #ead9e6 38%, rgba(235, 200, 221, 0.35) 56%, transparent 72%);
-  box-shadow: 0 0 42px rgba(235, 200, 221, 0.24);
-  opacity: 0.58;
-  z-index: 1;
-}
-
 .hero-particles {
   position: absolute;
   inset: 0;
   z-index: 1;
-  opacity: 0.34;
+  opacity: 0.46;
   background-image:
-    radial-gradient(circle, rgba(247, 240, 232, 0.58) 0 1px, transparent 1.5px),
-    radial-gradient(circle, rgba(201, 198, 216, 0.34) 0 1px, transparent 1.5px),
-    radial-gradient(circle, rgba(235, 200, 221, 0.28) 0 1px, transparent 1.5px);
-  background-position: 16% 22%, 74% 37%, 42% 68%;
-  background-size: 160px 190px, 230px 280px, 290px 340px;
+    radial-gradient(circle, rgba(247, 240, 232, 0.6) 0 1px, transparent 1.5px),
+    radial-gradient(circle, rgba(201, 198, 216, 0.38) 0 1px, transparent 1.5px),
+    radial-gradient(circle, rgba(235, 200, 221, 0.3) 0 1px, transparent 1.5px),
+    radial-gradient(circle, rgba(247, 240, 232, 0.24) 0 1px, transparent 1.4px);
+  background-position: 16% 22%, 74% 37%, 42% 68%, 86% 74%;
+  background-size: 160px 190px, 230px 280px, 290px 340px, 340px 390px;
 }
 
 .hero-content {
@@ -953,7 +940,6 @@ p {
     <section class="section section-welcome reveal-section" aria-labelledby="welcome-title">
       <div class="moon moon-large" aria-hidden="true"></div>
       <div class="section-inner narrow">
-        <p class="eyebrow">Paloma bajo la luna</p>
         <h2 id="welcome-title">Te espero para festejar este gran momento de mi vida</h2>
         <p class="lead">Quiero compartir con vos una noche unica, llena de emocion, musica y recuerdos.</p>
       </div>
