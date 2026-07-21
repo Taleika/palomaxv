@@ -417,6 +417,10 @@ p {
     linear-gradient(180deg, var(--color-bg-secondary), var(--color-bg));
 }
 
+.section-party h2 {
+  color: var(--color-pink);
+}
+
 .info-card p {
   color: rgba(247, 240, 232, 0.84);
 }
@@ -429,6 +433,10 @@ p {
 
 .section-dress {
   background: linear-gradient(180deg, #080713, #0f0d20);
+}
+
+.section-dress .section-icon {
+  width: clamp(135px, 31vw, 192px);
 }
 
 .statement {
@@ -979,7 +987,7 @@ p {
     <section class="section section-countdown reveal-section" aria-labelledby="countdown-title">
       <div class="section-inner">
         <p class="eyebrow">Cuenta regresiva</p>
-        <h2 id="countdown-title">Falta muy poco para nuestra noche</h2>
+        <h2 id="countdown-title">Faltan...</h2>
         <div class="countdown" id="countdown" role="timer" aria-live="polite">
           <div class="time-block"><strong id="days">00</strong><span>Dias</span></div>
           <div class="time-block"><strong id="hours">00</strong><span>Horas</span></div>
@@ -995,11 +1003,10 @@ p {
         <article class="glass-card info-card">
           <img src="images/icono-fiesta.png" alt="" class="section-icon" width="275" height="275" loading="lazy" decoding="async">
           <div>
-            <p class="eyebrow">Celebracion</p>
             <h2 id="party-title">La fiesta</h2>
             <p><strong>Sabado 22 de agosto de 2026</strong><br>21:00 hs<br>Sociedad Rural de Saladillo</p>
             <!-- REEMPLAZAR POR URL DEFINITIVA DE GOOGLE MAPS -->
-            <a class="btn" id="maps-link" href="https://maps.app.goo.gl/aCuGR8Dj58nea9uB8" target="_blank" rel="noopener noreferrer">Como llegar</a>
+            <a class="btn" id="maps-link" href="https://maps.app.goo.gl/MpRYwikxY1ZdgNff6" target="_blank" rel="noopener noreferrer">Como llegar</a>
           </div>
         </article>
       </div>
@@ -1026,9 +1033,7 @@ p {
 
     <section class="section section-rsvp reveal-section" aria-labelledby="rsvp-title">
       <div class="section-inner narrow">
-        <p class="eyebrow">Asistencia</p>
-        <h2 id="rsvp-title">¿Me acompañas?</h2>
-        <p>Tu presencia hara que esta noche sea todavia mas especial.</p>
+        <h2 id="rsvp-title">Asistencia</h2>
         <p>Confirma tu asistencia antes del 10 de agosto de 2026.</p>
         <a class="btn btn-primary" id="rsvp-link" href="https://forms.gle/DHSEQX31NsoJURdW8" target="_blank" rel="noopener noreferrer">Confirmar asistencia</a>
       </div>
@@ -1041,7 +1046,6 @@ p {
           <p class="eyebrow">Codigo de vestimenta</p>
           <h2 id="dress-title">Dress Code</h2>
           <p class="statement">Elegante</p>
-          <p>Vestite para brillar bajo la luna.</p>
         </div>
       </div>
     </section>
@@ -1050,8 +1054,7 @@ p {
       <div class="instagram-image" aria-hidden="true"></div>
       <div class="section-inner instagram-panel">
         <p class="eyebrow">Instagram</p>
-        <h2 id="instagram-title">Vivamos la noche juntos</h2>
-        <p>Comparti tus fotos y videos conmigo.</p>
+        <h2 id="instagram-title">Comparti tus fotos y videos conmigo.</h2>
         <p class="handle">@paloccelia</p>
         <a class="btn" id="instagram-link" href="https://www.instagram.com/paloccelia/" target="_blank" rel="noopener noreferrer">Ir a Instagram</a>
       </div>
@@ -1063,16 +1066,15 @@ p {
         <img src="images/icono-canciones.png" alt="" class="section-icon" width="275" height="275" loading="lazy" decoding="async">
         <div>
           <p class="eyebrow">Canciones</p>
-          <h2 id="songs-title">La musica de nuestra noche</h2>
+          <h2 id="songs-title">Sugerir canciones</h2>
           <p>Ayudame a elegir las canciones que no pueden faltar en la fiesta.</p>
           <a class="btn btn-primary" id="song-link" href="https://forms.gle/vRbv73SbYmghkoTk7" target="_blank" rel="noopener noreferrer">Sugerir una cancion</a>
         </div>
       </div>
     </section>
 
-    <section class="section section-gallery section-gallery-two reveal-section" aria-labelledby="gallery-two-title">
+    <section class="section section-gallery section-gallery-two reveal-section" aria-label="Segunda galeria de Paloma">
       <div class="section-inner">
-        <p class="gallery-quote" id="gallery-two-title">Cada etapa deja recuerdos. Esta noche comienza una nueva.</p>
         <div class="gallery gallery-two">
           <button class="gallery-item wide opener subtle-parallax" type="button" data-lightbox-index="4">
             <img src="images/foto5.jpg" alt="Paloma en una toma de apertura para sus XV" width="1515" height="2500" loading="lazy" decoding="async">
@@ -1118,8 +1120,7 @@ p {
   <footer class="closing section reveal-section">
     <div class="moon moon-close" aria-hidden="true"></div>
     <div class="section-inner narrow">
-      <p>Gracias por acompañarme en este momento tan especial.</p>
-      <h2>Nos vemos bajo la luna.</h2>
+      <p>Te espero...</p>
       <p class="closing-name">Paloma</p>
       <p class="hero-date">22 · 08 · 26</p>
     </div>
@@ -1145,7 +1146,7 @@ const eventData = {
   bank: "Santander",
   alias: "palomacelia15",
   cbu: "0720430688000000663872",
-  mapsUrl: "https://maps.app.goo.gl/aCuGR8Dj58nea9uB8",
+  mapsUrl: "https://maps.app.goo.gl/MpRYwikxY1ZdgNff6",
   rsvpUrl: "https://forms.gle/DHSEQX31NsoJURdW8",
   songRequestUrl: "https://forms.gle/vRbv73SbYmghkoTk7"
 };
